@@ -1,0 +1,197 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>felxbox_01</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/logo.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1">Museé du Louvre</a>
+          <a href="#secc2">Acerca del Festival</a>
+          <a href="#secc3">Ponentes y literatura</a>
+          <a href="#secc4">Conferencia y Multimedia</a>
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1 style="color:white;">Musée du Louvre</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p style="color:white;"> El museo del Louvre está ubicado en París, la capital de Francia, siendo este su museo nacional. Fue inaugurado el 8 de noviembre de 1793. Es hogar de algunas de las obras más famosas del mundo, como la Mona Lisa, la Venus de Milo, la Libertad guiando al pueblo, y el Código de Hammurabi.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p style="color:white;">¡Haz clic en cualquiera de las siguientes imágenes para visualizar una panorámica 360 de su exterior!</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+    		<div class="imgs-secc-1">
+    			<!--contenedor con las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<img src="imagenes/img1b.png" title="Img 1b">
+    			</div>
+    			<!--contenedor los dos textos de las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--texto para imagen a la izquierda-->
+	        		<p style="color:grey;">Fotografía del museo Louvre. (PEXELS) </p>
+	        		<!--texto para imagen a la derecha-->
+	        		<p style="color:grey;" >Patio del Museo del Louvre por la noche, con la pirámide en el centro. (Wikipedia)</p>
+        		</div>
+        		<!--contenedor con las dos imagenes en su version mobile-->
+        		<div class="par-imgs-mobile">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<!--texto para la imagen-->
+	        		<p style="color:grey;">Fotografía del museo Louvre. (PEXELS) </p>
+	        		<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1b.png" title="Img 1b">
+	        		<!--texto para la imagen-->
+	        		<p style="color:grey;">Patio del Museo del Louvre por la noche, con la pirámide en el centro. (Wikipedia)</p>
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1 style="color:white;">Acerca del Festival</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p style="color:white;">El festival Prometeo tomará lugar en las afueras del museo Louvre los días 21-23 de septiembre de 2025, de 5:00 a 10:00 p.m.  </p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p style="color:white;">"Encendiendo mentes, transformando sociedades" este ha sido nuestro slogan desde los inicios del festival en 2014, mediante nuestras conferencias, autores, literatura y multimedia, buscamos alumbrar temas de importancia para toda la sociedad, trayendo con estos cambio y conocimiento.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img2.png" title="Img 2">
+        		<!--texto para la imagen-->
+        		<p style="color:grey;">Identificador para el Festival Internacional "Prometheus".</p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1 style="color:white;">Ponentes y literatura</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p style="color:white;">Los ponentes serán: Jorge Guerra, Antony Sutton y Guillermo Mas Arellano.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p style="color:white;">La literatura que se presentará será: 1984 de George Orwell, Un Mundo feliz de Aldous Huxley, The Rape of the Mind: The Psychology of Though de Joost Meerloo, y Confesiones de un sicario económico de John Perkins.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img3.png" title="Img 3">
+        		<!--texto para la imagen-->
+        		<p style="color:grey;">Ponentes y literatura que se presentarán en el festival.</p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1 style="color:white;">Conferencia y Multimedia</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p style="color:white;">Nos acompañará el conferencista Pável Dúrov, presentando el tema "ADVERTENCIA DEL FUNDADOR DE TELEGRAM: SOMOS LA ÚLTIMA GENERACIÓN LIBRE".
+</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p style="color:white;">La multimedia que se presentará en el festival es: Land Of The Blind (2006), Documental Zeitgesit, y el Documental The Money Masters/Los Amos del Dinero (1996) - Historia de los bancos centrales.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen-secc4">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img4.png" title="Img 4">
+        		<!--texto para la imagen-->
+        		<p style="color:grey;">Conferencia y Multimedia que se presentarán.</p>
+    		</div>
+
+    	</div>
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/">
+	      	<img src="imagenes/fbk.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/">
+	      	<img src="imagenes/twt.png" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="http://instagram.com/">
+	      	<img src="imagenes/inst.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="color:white;">todos los derechos a sus respectivos autores</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>
